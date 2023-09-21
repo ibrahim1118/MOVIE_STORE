@@ -7,3 +7,6 @@ User Registration: Users can create an account to access the movie store.
 Movie Catalog: Users can browse the available movies in the store, view details such as title, genre, and description, and search for movies based on various criteria.
 
 User Management: Admin users have additional privileges to manage the movie catalog, including adding new movies, updating movie details, and removing movies from the store.
+
+# Technologies Used
+Asp.Net core MVC , SQL Server , Entity Framework ,3-Tier Architecture , Repository Design Pattern , Specification Design Pattern , Identity Server .
