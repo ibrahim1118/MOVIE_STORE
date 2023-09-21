@@ -1,0 +1,23 @@
+﻿@model MovieVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="movie-detail w-80 m-auto">
+    <div class="img-container">
+        <img alt="image" src="~/Image/@Model.MovieImage">
+    </div>
+
+    <div class="detail-container">
+        <h3>Naem : @Model.Title</h3>
+        <h4>Genre: @Model.Genre.Name</h4>
+        <h4>Year : @Model.ReleaseYear</h4>
+        <h4>Rate :@Model.Rate</h4>
+        <h4>Cast : @Model.Cast</h4>
+        <h4>Director : @Model.Director</h4>
+        <h4>Description : @Model.Description</h4>
+    </div>
+</div>
+<div class="w-80 m-auto">
+    <a href="/Home/Index" class="btn btn-default">Back</a>
+</div>

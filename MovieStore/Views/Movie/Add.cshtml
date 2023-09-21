@@ -1,0 +1,90 @@
+﻿@model MovieVM
+@{
+    ViewData["Title"] = "Add";
+}
+
+
+<form class="w-40" asp-action="Add" method="post" enctype="multipart/form-data">
+    <h2 class="pb-10">Add New  Movie</h2>
+    <div class="input-container">
+        <label asp-for="Title" class="w-40">Title</label>
+        <input type="text" class="input" asp-for="Title">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Title"> </span>
+    </div>
+    <div class="input-container">
+        <label asp-for="GenreId" class="w-40">Genre</label>
+        <select asp-items="@ViewBag.Gener" asp-for="GenreId">
+            <option value="">--select--</option>
+        </select>
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="GenreId"> </span>
+    </div>
+
+
+    <div class="input-container">
+        <label asp-for="Rate" class="w-40">Rate</label>
+        <input type="text" class="input" asp-for="Rate">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Rate"> </span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Description" class="w-40">Description</label>
+        <input type="text" class="input" asp-for="Description">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Description"> </span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Image" class="w-40">Image</label>
+        <input  class="input" asp-for="Image">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Image"> </span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="ReleaseYear" class="w-40">Released Year</label>
+        <input type="text" class="input" asp-for="ReleaseYear">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="ReleaseYear"> </span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Cast" class="w-40">Cast</label>
+        <input type="text" class="input" asp-for="Cast">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Cast"> </span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Director" class="w-40">Director</label>
+        <input type="text" class="input" asp-for="Director">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Director"> </span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert mb-1">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="input-container">
+        <button class="btn btn-default" type="submit">Save</button>
+        <a class="btn btn-sec" asp-action="Index">All records</a>
+    </div>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

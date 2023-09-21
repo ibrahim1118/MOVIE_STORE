@@ -1,0 +1,15 @@
+D:\project\MovieStore\BLL\bin\Debug\net7.0\BLL.deps.json
+D:\project\MovieStore\BLL\bin\Debug\net7.0\BLL.dll
+D:\project\MovieStore\BLL\bin\Debug\net7.0\BLL.pdb
+D:\project\MovieStore\BLL\bin\Debug\net7.0\DAL.dll
+D:\project\MovieStore\BLL\bin\Debug\net7.0\DAL.pdb
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.dll
+D:\project\MovieStore\BLL\obj\Debug\net7.0\refint\BLL.dll
+D:\project\MovieStore\BLL\obj\Debug\net7.0\BLL.pdb
+D:\project\MovieStore\BLL\obj\Debug\net7.0\ref\BLL.dll

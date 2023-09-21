@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MovieVM>
+@{
+    ViewData["Title"] = "Index";
+}
+﻿
+@{
+}
+
+<div class="tbl-container">
+    <h2>Movies</h2>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>ReleaseYear</th>
+            <th>Rate</th>
+            <th>Image</th>
+            <th>Cast</th>
+            <th>Director</th>
+            <th>Action</th>
+        </tr>
+        @foreach(var item in Model){
+        <tr>
+            <td>@item.Title</td>
+                <td>@item.Genre.Name</td>
+                <td>@item.ReleaseYear</td>
+                <td>
+                  <small class="text-muted">@item.Rate.ToString("0.0")</small></td>
+            <td><img style="height:60px;width:80px" src="~/Image/@item.MovieImage"/></td>
+                <td>@item.Cast</td>
+                <td>@item.Director</td>
+                <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                <a onclick="return window.confirm('Are you sure?')" href="/Movie/Delete?id=@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+        }
+     
+    </table>
+    <div class="input-container">
+        <a asp-action="Add" class="btn btn-sec">Add New Movie</a>
+    </div>
+</div>
